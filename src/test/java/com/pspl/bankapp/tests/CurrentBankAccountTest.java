@@ -22,7 +22,7 @@ public class CurrentBankAccountTest {
 	public void testDepositWithoutBorrowAmount() throws OverdraftedException {
 		account.withdraw(75000);
 		account.deposit(10000);
-		assertEquals(30000, account.getBalance(), 0.01);
+		assertEquals(32000, account.getBalance(), 0.01);
 		assertEquals(0, account.getAmountBorrowed(), 0.01);
 		account.deposit(8765.34);
 		assertEquals(43765.34, account.getBalance(), 0.01);
